@@ -1,32 +1,341 @@
-.App {
-  text-align: center;
+.NavBar {
+  height: 2em;
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10%;
+  position: fixed;
+  z-index: 50;
+  right: 0;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  background-color: white;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.NavBar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 15px;
+  font-size: 1.2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.NavBar a:hover {
+  background-color: deepskyblue;
+  color: white;
+}
+
+.Profile {
+  margin-top: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-image: url("./imgs/programming.jpg");
+  background-size: cover;
+}
+
+.ImageContainer {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 85px;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+}
+
+.ImageProfile {
+  margin: 0px 0px 0px 0px;
+  width: 150px;
+  height: 150px;
+  transform: scale(1.2);
+}
+
+.Profile div {
+  margin: 60px 0px 0px 0px;
+}
+
+.title {
+  color: white;
+  font-size: 1.2em;
+}
+
+.title.One {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.title.Two {
+  margin: 2px 0 0 0;
+}
+
+.title.Three {
+  border-color: white;
+  border-radius: 12px;
+  border-style: solid;
+  padding: 2px 20px;
+  font-size: 1.5em;
+  margin-bottom: 50px;
+}
+
+.AboutMe {
+  background-color: dodgerblue;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.AboutMe div{
+  color: white;
+  padding: 5px 20%;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.AboutMe.title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.Portafolio {
+  background-color: rgba(245, 245, 245, 1);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.Portafolio div {
+  text-align: center;
+}
+
+.Portafolio-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: dodgerblue;
+}
+
+.Portafolio-desc {
+  font-size: 1.2em;
+  color: gray;
+}
+
+.Portafolio-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 20%;
+  margin-top: 20px;
+}
+
+.Portafolio-proyect {
+  flex: 1;  
+}
+
+.Portafolio-image {
+  width: 200px;
+  height: 200px;
+}
+
+.Portafolio-hover {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.2s ease;
+  background-color: rgba(30, 144, 255, .8)
+}
+
+.Portafolio-hover div {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Portafolio-relative:hover .Portafolio-hover {
+  opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Portafolio-relative {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.hover-title {
+  font-size: 1em;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.hover-title-a {
+  height: 1.5em;
+  font-size: 1em;
+  font-weight: bold;
+  padding-top: 5px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 3px;
+  margin: 5px 10% 0 10%;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Mas {
+  border-style: solid;
+  border-color: dodgerblue;
+  border-radius: 10px;
+  display: inline;
+  padding: 0px 20px 0px 20px;
+  color: gray;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.side-drawer {
+  height: 100%;
+  background: forestgreen;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  max-width: 400px;
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+.side-drawer ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.side-drawer li {
+  margin: 0.5rem 0;
+}
+
+.side-drawer a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.side-drawer a:hover,
+.side-drawer a:active {
+  font-weight: bold;
+  color: rgb(202, 255, 200)
+}
+
+.side-drawer.open {
+  transform: translateX(0);
+}
+
+.description-cenz {
+  font-size: 2em;
+  text-align: center;
+  padding: 30px 120px 30px 120px;
+  color: darkslategray;
+  background-color: white;
+}
+
+.container-contact {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+}
+
+.textContact {
+  width: 800px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  flex-direction: column;
+}
+
+.flexPortafolio {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+  .Portafolio-container {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .Portafolio-relative {
+    margin-bottom: 25px;
+  }
+  .container-contact {
+    flex-direction: column;
+    width: 90%;
+  }
+  .textContact {
+    width: 90%;
+  }
+  .AboutMe div{
+    padding: 5px 8%;
+  }
+  .title.One {
+    font-size: 1.5em;
+  }
+  .NavBar {
+    padding: 0px;
+    justify-content: center;
+  }
+  .NavBar a {
+    padding: 0px 10px;
+    flex: 1;
+  }
+}
+
+@media (max-width: 1240px) and (min-width: 769px) {
+  .Img {
+    width: 200px;
+    height: 115px;
+  }
+  .ContainerSmall {
+    width: 200px;
+    height: 115px
+  }
+  .description {
+    padding: 5px;
+    font-size: .8em;
+  }
+  .instalaciones li {
+    font-size: .8em;
+    padding: 0px 5px;
+  }
+}
+
+@media (min-width: 1241px) {
+  .Img {
+    width: 350px;
+    height: 200px;
+  }
+  .ContainerSmall {
+    width: 350px;
+    height: 200px
+  }
+}
+
+@media (min-width: 768px) {
+  .Burger {
+    display: none
+  }
+  .SelectBox {
+    flex: 0;
+  }
+  .LogoBox {
+    flex: 1
   }
 }

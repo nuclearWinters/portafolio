@@ -1,0 +1,67 @@
+.titleSM {
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    font-size: 1.5em;
+    color: dodgerblue; 
+    font-weight: bold;
+}
+
+.textSM {
+    padding: 10px 20%; 
+    color: rgb(40,40,40); 
+    font-size: "1.2em"
+}
+
+.text2 {
+    padding: 0px 20%; 
+    color: rgb(40,40,40); 
+    font-size: 1.2em
+}
+
+.title2 {
+    text-align: center; 
+    padding: 20px 0px 0px 0px; 
+    font-size: 1.2em; 
+    color: rgb(100,100,100); 
+    font-weight: bold
+}
+
+.title3 {
+    text-align: center; 
+    padding: 20px 0px 0px 0px; 
+    font-size: 1.2em; 
+    color: dodgerblue; 
+    font-weight: bold
+}
+
+.back {
+    margin-top: 2em; 
+    display: flex; 
+    flex-direction: column; 
+    background-color: rgb(245,245,245);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.first {
+    padding: 60px 0px 20px 0px
+}
+
+.titleli {
+    text-align: center; 
+    font-weight: bold; 
+    padding-top: 40px;
+    font-size: 1.5em
+}
+
+.descli {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding-top: "5px"
+}
+
+.imgli {
+    margin: 10px 10px;
+    height: 50px;
+    width: 50px;
+}
