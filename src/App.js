@@ -58,12 +58,6 @@ class App extends Component {
 
 export default App;
 
-<<<<<<< HEAD
 /*Esto es un comentario mas para probrar git*/
 
 /*Voy a borrar algo luegp*/
-=======
-/*Comentando para seguir haciendo cambios*/
-
-/*Esto es un comentario mas para probrar git*/
->>>>>>> origin/master
