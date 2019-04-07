@@ -18,7 +18,7 @@ class App extends Component {
     dataLast3: [],
     habilidades: [[]]
   };
-
+/*change no saved*/
   componentWillMount() {
     const data = db.ref("proyectos")
     data.once("value", snap => {
