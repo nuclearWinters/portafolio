@@ -62,4 +62,8 @@ export default App;
 
 /*Esto es un comentario mas para probrar git*/
 
+<<<<<<< HEAD
 /*mas cambios*/
+=======
+/*cambio luego*/
+>>>>>>> 67d57f0ff2b696d0900a49bcaa80db2d47fdedad
