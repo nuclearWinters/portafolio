@@ -10,6 +10,8 @@ import SobreMi from "./pages/SobreMi"
 import Portafolio from "./pages/Portafolio"
 import { db } from "./components/Firebase"
 
+/*Este comentario creara conflictos?*/
+
 class App extends Component {
   state = {
     data: [],
